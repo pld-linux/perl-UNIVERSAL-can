@@ -8,13 +8,13 @@
 Summary:	UNIVERSAL::can - Hack around people calling UNIVERSAL::can() as a function
 Summary(pl):	UNIVERSAL::can - poprawianie ludzi wywo³uj±cych UNIVERSAL::can() jako funkcjê
 Name:		perl-UNIVERSAL-can
-Version:	1.11
+Version:	1.12
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a11167ca16c6d9767bab1ee41332f096
+# Source0-md5:	4386c4f7479447fc5b51e8c3770cd2f4
 URL:		http://search.cpan.org/dist/UNIVERSAL-can/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
