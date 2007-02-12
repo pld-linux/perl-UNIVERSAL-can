@@ -6,7 +6,7 @@
 %define	pdir	UNIVERSAL
 %define	pnam	can
 Summary:	UNIVERSAL::can - Hack around people calling UNIVERSAL::can() as a function
-Summary(pl):	UNIVERSAL::can - poprawianie ludzi wywo³uj±cych UNIVERSAL::can() jako funkcjê
+Summary(pl.UTF-8):   UNIVERSAL::can - poprawianie ludzi wywoÅ‚ujÄ…cych UNIVERSAL::can() jako funkcjÄ™
 Name:		perl-UNIVERSAL-can
 Version:	1.12
 Release:	1
@@ -48,27 +48,27 @@ module will emit a lexical warning (see perllexwarn) to that effect.
 You can disable it with no warnings; or no warnings 'UNIVERSAL::isa';,
 but don't do that; fix the code instead.
 
-%description -l pl
-Klasa UNIVERSAL udostêpnia kilka domy¶lnych metod, które mog± byæ
-u¿ywane przez wszystkie obiekty. Zorientowanie obiektowe pozwala
-programistom przykryæ te metody w podklasach, aby zapewniæ bardziej
+%description -l pl.UTF-8
+Klasa UNIVERSAL udostÄ™pnia kilka domyÅ›lnych metod, ktÃ³re mogÄ… byÄ‡
+uÅ¼ywane przez wszystkie obiekty. Zorientowanie obiektowe pozwala
+programistom przykryÄ‡ te metody w podklasach, aby zapewniÄ‡ bardziej
 konkretne i odpowiednie zachowanie.
 
-Niektórzy autorzy wywo³uj± metody w klasie UNIVERSAL na potencjalnych
-wywo³uj±cych jako funkcje, pomijaj±c jakiekolwiek przykrywanie. Jest
-to niedobre i nie nale¿y tego robiæ. Niestety nie ka¿dy zwraca uwagê
-na to ostrze¿enie i jego z³y kod mo¿e zepsuæ inny dobry kod.
+NiektÃ³rzy autorzy wywoÅ‚ujÄ… metody w klasie UNIVERSAL na potencjalnych
+wywoÅ‚ujÄ…cych jako funkcje, pomijajÄ…c jakiekolwiek przykrywanie. Jest
+to niedobre i nie naleÅ¼y tego robiÄ‡. Niestety nie kaÅ¼dy zwraca uwagÄ™
+na to ostrzeÅ¼enie i jego zÅ‚y kod moÅ¼e zepsuÄ‡ inny dobry kod.
 
-Na szczê¶cie ten modu³ zastêpuje UNIVERSAL::can() metod± sprawdzaj±c±
-czy pierwszy argument jest poprawnym wywo³uj±cym (obiektem -
-pob³ogos³awion± referencj± - albo nazw± klasy). Je¶li tak, a klasa
-wywo³uj±cego ma w³asn± metodê can(), wywo³uje j± jako metodê. W
-przeciwnym wypadku wszystko dzia³a tak, jak mo¿na by siê tego
-spodziewaæ.
+Na szczÄ™Å›cie ten moduÅ‚ zastÄ™puje UNIVERSAL::can() metodÄ… sprawdzajÄ…cÄ…
+czy pierwszy argument jest poprawnym wywoÅ‚ujÄ…cym (obiektem -
+pobÅ‚ogosÅ‚awionÄ… referencjÄ… - albo nazwÄ… klasy). JeÅ›li tak, a klasa
+wywoÅ‚ujÄ…cego ma wÅ‚asnÄ… metodÄ™ can(), wywoÅ‚uje jÄ… jako metodÄ™. W
+przeciwnym wypadku wszystko dziaÅ‚a tak, jak moÅ¼na by siÄ™ tego
+spodziewaÄ‡.
 
-Je¶li kto¶ próbuje wywo³aæ UNIVERSAL::can() jako funkcjê, ten modu³
-wygeneruje ostrze¿enie s³owne (perllexwarn). Mo¿na wy³±czyæ je - ale
-nie nale¿y tego robiæ, zamiast tego lepiej poprawiæ kod.
+JeÅ›li ktoÅ› prÃ³buje wywoÅ‚aÄ‡ UNIVERSAL::can() jako funkcjÄ™, ten moduÅ‚
+wygeneruje ostrzeÅ¼enie sÅ‚owne (perllexwarn). MoÅ¼na wyÅ‚Ä…czyÄ‡ je - ale
+nie naleÅ¼y tego robiÄ‡, zamiast tego lepiej poprawiÄ‡ kod.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
