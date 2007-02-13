@@ -6,7 +6,7 @@
 %define	pdir	UNIVERSAL
 %define	pnam	can
 Summary:	UNIVERSAL::can - Hack around people calling UNIVERSAL::can() as a function
-Summary(pl.UTF-8):   UNIVERSAL::can - poprawianie ludzi wywołujących UNIVERSAL::can() jako funkcję
+Summary(pl.UTF-8):	UNIVERSAL::can - poprawianie ludzi wywołujących UNIVERSAL::can() jako funkcję
 Name:		perl-UNIVERSAL-can
 Version:	1.12
 Release:	1
