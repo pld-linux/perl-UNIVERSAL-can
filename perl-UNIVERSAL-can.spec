@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	UNIVERSAL
 %define	pnam	can
 Summary:	UNIVERSAL::can - Hack around people calling UNIVERSAL::can() as a function
